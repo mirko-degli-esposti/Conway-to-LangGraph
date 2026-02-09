@@ -3,7 +3,7 @@
 
 <div align="center">
 
-![Course Banner](assets/images/banner.png)
+![Course Banner](assets/images/banner.svg)
 
 **A 48-hour Master's course bridging Cellular Automata and Modern AI Agents**
 
