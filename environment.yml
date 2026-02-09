@@ -1,0 +1,89 @@
+name: conway-langgraph
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  # Python
+  - python=3.11
+
+  # Core Scientific Computing
+  - numpy>=1.24
+  - scipy>=1.10
+  - pandas>=2.0
+  - matplotlib>=3.7
+  - seaborn>=0.12
+
+  # Jupyter & Interactive
+  - jupyter>=1.0
+  - jupyterlab>=4.0
+  - ipywidgets>=8.0
+  - ipython>=8.12
+
+  # Agent-Based Modeling
+  - mesa>=2.1
+  - networkx>=3.0
+  - python-igraph  # Fast graph algorithms
+
+  # Machine Learning (optional for some weeks)
+  - scikit-learn>=1.3
+  - gymnasium>=0.28  # Successor to gym (for RL)
+
+  # Visualization
+  - plotly>=5.14
+  - pydot  # For graph visualization
+  - graphviz
+
+  # Utilities
+  - tqdm>=4.65  # Progress bars
+  - pyyaml>=6.0
+  - python-dotenv  # For API keys
+
+  # Development Tools
+  - black  # Code formatter
+  - pylint  # Linter
+  - pytest  # Testing
+
+  # pip dependencies (not available via conda)
+  - pip>=23.0
+  - pip:
+    # LangChain Ecosystem (latest versions)
+    - langchain>=0.1.0
+    - langchain-community>=0.0.20
+    - langchain-core>=0.1.0
+    - langgraph>=0.0.30
+    - langsmith>=0.0.87  # For debugging
+    
+    # LLM Backends
+    - openai>=1.10.0  # OpenAI API (optional)
+    - ollama>=0.1.0   # Local LLMs (primary)
+    - anthropic>=0.8.0  # Claude API (optional)
+    
+    # Vector Stores & Embeddings
+    - chromadb>=0.4.22  # Local vector DB
+    - sentence-transformers>=2.2.2  # For embeddings
+    - faiss-cpu>=1.7.4  # Fast similarity search
+    
+    # Document Processing
+    - pypdf>=3.17.0  # PDF handling
+    - python-docx>=1.1.0  # Word docs
+    - beautifulsoup4>=4.12.0  # HTML parsing
+    - lxml>=4.9.3
+    
+    # Additional Utilities
+    - python-dotenv>=1.0.0
+    - tenacity>=8.2.3  # Retry logic
+    - tiktoken>=0.5.2  # Token counting
+    
+    # Optional: For advanced LLM features
+    - transformers>=4.37.0  # HuggingFace models
+    - torch>=2.1.0  # PyTorch (CPU version)
+    
+    # Symbolic Math (for physics applications)
+    - sympy>=1.12
+    
+    # Data validation
+    - pydantic>=2.5.0
+    
+    # HTTP requests
+    - httpx>=0.26.0
+    - aiohttp>=3.9.0  # Async HTTP
