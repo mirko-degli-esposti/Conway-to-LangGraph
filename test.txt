@@ -1,3 +1,0 @@
-# Test
-Test 3
-Git setup completato
