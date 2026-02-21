@@ -12,7 +12,7 @@
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 ![Status](https://img.shields.io/badge/status-active-success.svg)
 
-[**Syllabus**](docs/syllabus.md) • [**Setup Guide**](docs/setup_guide.md) • [**Bibliography**](docs/bibliography.md) • [**Discussions**](../../discussions)
+
 
 </div>
 
