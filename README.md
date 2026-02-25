@@ -157,14 +157,10 @@ jupyter lab
 
 ```
 📦 conway-to-langgraph/
- ┣ 📂 week01_elementary_ca/        ← Start here!
+ ┣ 📂 week01_elementary_ca/      ← Start here!
  ┣ 📂 week02_game_of_life/
- ┣ 📂 docs/                        ← Setup, bibliography, syllabus
- ┣ 📂 scripts/                     ← Utility scripts
- ┣ 📂 projects/                    ← Midterm & final projects
- ┣ 📜 environment.yml              ← Conda environment
- ┣ 📜 README.md                    ← You are here!
- └ 📜 LICENSE
+ ┣ 📂 week03...../               ← Setup, bibliography, syllabus
+ ┣ 📜 README.md                  ← You are here!
 ```
 
 ---
