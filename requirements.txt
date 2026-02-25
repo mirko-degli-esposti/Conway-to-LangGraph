@@ -1,0 +1,84 @@
+# From Conway to LangGraph - Python Dependencies
+# Python 3.10+ required
+# Install with: pip install -r requirements.txt
+
+# Core Scientific Computing
+numpy>=1.24.0
+scipy>=1.10.0
+pandas>=2.0.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Jupyter & Interactive Computing
+jupyter>=1.0.0
+jupyterlab>=4.0.0
+ipywidgets>=8.0.0
+ipython>=8.12.0
+notebook>=7.0.0
+
+# Agent-Based Modeling (Weeks 3-4)
+mesa>=2.1.0
+networkx>=3.0.0
+python-igraph>=0.11.0
+
+# Machine Learning & RL (Weeks 5-6)
+scikit-learn>=1.3.0
+gymnasium>=0.28.0  # Successor to OpenAI Gym
+
+# LangChain Ecosystem (Weeks 7-12)
+langchain>=0.1.0
+langchain-community>=0.0.20
+langchain-core>=0.1.0
+langgraph>=0.0.30
+langsmith>=0.0.87
+
+# LLM API Clients
+openai>=1.10.0       # OpenAI (optional)
+ollama>=0.1.0        # Local LLMs (primary - free!)
+anthropic>=0.8.0     # Claude API (optional)
+
+# Vector Stores & Embeddings
+chromadb>=0.4.22            # Local vector database
+sentence-transformers>=2.2.2 # Embeddings
+faiss-cpu>=1.7.4            # Similarity search
+
+# Document Processing
+pypdf>=3.17.0
+python-docx>=1.1.0
+beautifulsoup4>=4.12.0
+lxml>=4.9.3
+
+# Visualization
+plotly>=5.14.0
+pydot>=1.4.0
+
+# Utilities
+tqdm>=4.65.0              # Progress bars
+python-dotenv>=1.0.0      # Environment variables
+pyyaml>=6.0
+tenacity>=8.2.3           # Retry logic
+tiktoken>=0.5.2           # Token counting
+httpx>=0.26.0             # HTTP client
+aiohttp>=3.9.0            # Async HTTP
+
+# Data Validation
+pydantic>=2.5.0
+
+# Symbolic Math (Physics applications)
+sympy>=1.12
+
+# Optional: HuggingFace & PyTorch (for local transformers)
+# Uncomment if you want to run transformers locally
+# transformers>=4.37.0
+# torch>=2.1.0
+
+# Development Tools (Optional)
+black>=23.0.0        # Code formatter
+pylint>=3.0.0        # Linter
+pytest>=7.4.0        # Testing
+mypy>=1.7.0          # Type checking
+
+# Additional packages for specific exercises
+# (installed on-demand during labs)
+# mesa-geo>=0.5.0          # Geospatial ABM
+# stable-baselines3>=2.2.0 # Advanced RL

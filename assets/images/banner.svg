@@ -1,0 +1,145 @@
+<svg width="1200" height="400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Definizioni -->
+  <defs>
+    <!-- Gradient background moderno -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#3730a3;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6366f1;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Gradient overlay per profondità -->
+    <linearGradient id="overlayGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#000000;stop-opacity:0.2" />
+      <stop offset="100%" style="stop-color:#000000;stop-opacity:0" />
+    </linearGradient>
+    
+    <!-- Pattern cellular automata (Rule 30) -->
+    <pattern id="caPattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <rect width="20" height="20" fill="rgba(255,255,255,0.05)"/>
+      <rect x="0" y="0" width="5" height="5" fill="rgba(255,255,255,0.15)"/>
+      <rect x="10" y="5" width="5" height="5" fill="rgba(255,255,255,0.15)"/>
+      <rect x="5" y="10" width="5" height="5" fill="rgba(255,255,255,0.15)"/>
+      <rect x="15" y="15" width="5" height="5" fill="rgba(255,255,255,0.15)"/>
+    </pattern>
+    
+    <!-- Filtro glow per effetto futuristico -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="400" fill="url(#bgGradient)"/>
+  <rect width="1200" height="400" fill="url(#caPattern)" opacity="0.3"/>
+  <rect width="1200" height="400" fill="url(#overlayGradient)"/>
+  
+  <!-- Decorative elements: cellular automata blocks left side -->
+  <g opacity="0.2">
+    <rect x="50" y="50" width="8" height="8" fill="white"/>
+    <rect x="66" y="58" width="8" height="8" fill="white"/>
+    <rect x="58" y="66" width="8" height="8" fill="white"/>
+    <rect x="74" y="74" width="8" height="8" fill="white"/>
+    <rect x="50" y="82" width="8" height="8" fill="white"/>
+    <rect x="90" y="90" width="8" height="8" fill="white"/>
+    <rect x="58" y="98" width="8" height="8" fill="white"/>
+    <rect x="82" y="106" width="8" height="8" fill="white"/>
+  </g>
+  
+  <!-- Conway's glider (top right) -->
+  <g transform="translate(1050, 60)" opacity="0.25">
+    <rect x="10" y="0" width="15" height="15" fill="white" rx="2"/>
+    <rect x="25" y="15" width="15" height="15" fill="white" rx="2"/>
+    <rect x="0" y="30" width="15" height="15" fill="white" rx="2"/>
+    <rect x="10" y="30" width="15" height="15" fill="white" rx="2"/>
+    <rect x="25" y="30" width="15" height="15" fill="white" rx="2"/>
+  </g>
+  
+  <!-- Neural network pattern (bottom right) -->
+  <g transform="translate(950, 280)" opacity="0.15">
+    <!-- Nodes -->
+    <circle cx="20" cy="20" r="8" fill="white"/>
+    <circle cx="80" cy="10" r="8" fill="white"/>
+    <circle cx="80" cy="30" r="8" fill="white"/>
+    <circle cx="140" cy="20" r="8" fill="white"/>
+    <!-- Connections -->
+    <line x1="28" y1="20" x2="72" y2="12" stroke="white" stroke-width="2"/>
+    <line x1="28" y1="20" x2="72" y2="28" stroke="white" stroke-width="2"/>
+    <line x1="88" y1="10" x2="132" y2="18" stroke="white" stroke-width="2"/>
+    <line x1="88" y1="30" x2="132" y2="22" stroke="white" stroke-width="2"/>
+  </g>
+  
+  <!-- Main Title -->
+  <text x="600" y="160" 
+        font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" 
+        font-size="72" 
+        font-weight="700" 
+        fill="white" 
+        text-anchor="middle"
+        letter-spacing="2">
+    From Conway to LangGraph
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="600" y="210" 
+        font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" 
+        font-size="28" 
+        font-weight="300" 
+        fill="#e0e7ff" 
+        text-anchor="middle"
+        letter-spacing="1">
+    Agent Systems for Physicists in the LLM Era
+  </text>
+  
+  <!-- Decorative line -->
+  <line x1="300" y1="240" x2="900" y2="240" 
+        stroke="#818cf8" 
+        stroke-width="2" 
+        opacity="0.5"/>
+  
+  <!-- Bottom info bar -->
+  <g opacity="0.9">
+    <rect x="0" y="340" width="1200" height="60" fill="rgba(0,0,0,0.3)"/>
+    
+    <!-- Left: University -->
+    <text x="40" y="375" 
+          font-family="'Segoe UI', Arial, sans-serif" 
+          font-size="18" 
+          font-weight="500" 
+          fill="white">
+      📚 Università di Bologna
+    </text>
+    
+    <!-- Center: Department -->
+    <text x="600" y="375" 
+          font-family="'Segoe UI', Arial, sans-serif" 
+          font-size="18" 
+          font-weight="500" 
+          fill="white"
+          text-anchor="middle">
+      Dipartimento di Matematica
+    </text>
+    
+    <!-- Right: Course type -->
+    <text x="1160" y="375" 
+          font-family="'Segoe UI', Arial, sans-serif" 
+          font-size="18" 
+          font-weight="500" 
+          fill="white"
+          text-anchor="end">
+      Master's Course 🎓
+    </text>
+  </g>
+  
+  <!-- Accent elements -->
+  <circle cx="150" cy="200" r="3" fill="#fbbf24" opacity="0.6">
+    <animate attributeName="opacity" values="0.3;0.8;0.3" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1050" cy="180" r="3" fill="#fbbf24" opacity="0.6">
+    <animate attributeName="opacity" values="0.8;0.3;0.8" dur="2.5s" repeatCount="indefinite"/>
+  </circle>
+</svg>

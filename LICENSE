@@ -1,0 +1,69 @@
+# License
+
+This repository uses a **dual license** structure:
+
+## Educational Materials
+
+All educational materials (lectures, slides, documentation, exercises) are licensed under:
+
+**Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International**
+
+See [LICENSE-CC-BY-NC-SA](LICENSE-CC-BY-NC-SA) for full text.
+
+### Summary:
+✅ Share and adapt for educational purposes  
+✅ Must give appropriate credit  
+✅ Share adaptations under same license  
+❌ No commercial use without permission  
+
+## Code Examples
+
+All code examples, scripts, and notebooks are licensed under:
+
+**MIT License**
+
+See [LICENSE-MIT](LICENSE-MIT) for full text.
+
+### Summary:
+✅ Use, copy, modify, merge, publish, distribute  
+✅ Sublicense and/or sell  
+✅ Commercial use allowed  
+✅ Just include copyright notice  
+
+---
+
+## What This Means
+
+**For Students:**
+- ✅ Use all materials for learning
+- ✅ Share with classmates
+- ✅ Use code in your projects (even commercial)
+- ❌ Don't sell the course materials
+
+**For Educators:**
+- ✅ Fork and adapt for your courses
+- ✅ Must credit original authors
+- ✅ Share modifications under same license
+- ❌ Contact us for commercial use
+
+**For Companies/Startups:**
+- ✅ Use code examples freely
+- ❌ Contact us to license course materials for training
+
+---
+
+## Attribution
+
+When using materials from this course, please credit:
+
+```
+From Conway to LangGraph: Agent Systems for Physicists
+[Your Name], [University Name], 2025
+https://github.com/[username]/conway-to-langgraph
+```
+
+---
+
+## Questions?
+
+For licensing questions, contact: [your.email@university.it]
