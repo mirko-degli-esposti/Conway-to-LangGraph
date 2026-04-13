@@ -209,3 +209,4 @@ week01_elementary_ca/Books&Articles/*.pdf
 *.pdf
 week01_elementary_ca/Books&Articles/*.pdf
 *.pdf
+.DS_Store
